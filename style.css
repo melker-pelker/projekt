@@ -1,0 +1,46 @@
+/* --------- GLOBALA STILAR --------- */
+/* --------- GLOBALA STILAR --------- */
+:root {
+    --red: #eb3b5a;
+    --blue: #2d98da;
+    --lightblue:#45aaf2;
+    --offwhite: #f8f8ff;
+    --white: #fff;
+    --black: #000;
+    --font-logo: 'Righteous', cursive;
+    --font-headline: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    --font-text: serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--offwhite);
+    background: url('https://swewebb.github.io/resurser/norge/bg.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+
+    font-family: var(--font-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+}
+/* --------- WRAPPER --------- */
+
+/* --------- HEADER OCH NAV --------- */
+
+/* --------- CONTENT --------- */
+
+/* --------- FOOTER --------- */
+
+/* --------- START --------- */
+
+/* --------- EN HELG I OSLO --------- */
+
+/* --------- LILLA RESAN --------- */
+
+/* --------- STORA RESAN --------- */
+
+/* --------- OM OSS --------- */

@@ -1,5 +1,4 @@
 /* --------- GLOBALA STILAR --------- */
-/* --------- GLOBALA STILAR --------- */
 :root {
     --red: #eb3b5a;
     --blue: #2d98da;
@@ -27,13 +26,98 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headline);
 }
+
+.button {
+    display: block;
+    background-color: var(--blue);
+    border-radius: 0.25rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.button:hover {
+    background-color: var(--lightblue);
+}
+
+
 /* --------- WRAPPER --------- */
+.wrapper {        
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto) 1fr auto;
+
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    background-color: var(--white);
+}
+
 
 /* --------- HEADER OCH NAV --------- */
+header {
+    /* background-color: var(--red); */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: 0 2rem;
+}
+
+.logo {
+    font-family: var(--font-logo);
+    font-size: 5rem;
+    align-self: center;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    color: var(--red);
+}
+
+header nav {
+    align-self: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header li {
+    padding: 0 0.5rem;
+}
+
+header ul a {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.logo a {
+    color: color: var(--red);
+    text-decoration: none;  
+}
 
 /* --------- CONTENT --------- */
+.content {
+    padding: 1rem 2rem 0 2rem;
+}
+
 
 /* --------- FOOTER --------- */
+footer {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+}
+
 
 /* --------- START --------- */
 

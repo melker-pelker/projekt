@@ -100,7 +100,7 @@ header ul a {
 }
 
 .logo a {
-    color: color: var(--red);
+    color: color: var(--red-);
     text-decoration: none;  
 }
 
@@ -123,8 +123,136 @@ footer {
 
 /* --------- EN HELG I OSLO --------- */
 
+.destination {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.destination__image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.destination__header {
+    margin: 0;
+    color: var(--red);
+    font-size: 3rem;
+}
+
+.destination__blurb {
+    margin: 0;
+    color: var(--red);
+}
+
+.destination__holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.destination__info {
+    font-size: 1.1rem;
+}
+
+.destination__price {
+    align-self: flex-end;
+    animation-name: pricetag;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: orange;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 2.5rem;
+    max-width: 150px;
+    padding: 0.5rem;
+    transform: rotate(-3deg);
+    text-align: center;
+    text-decoration: none;
+}
+
+@keyframes pricetag {
+    0%    {transform: rotate(-3deg);}
+    50%   {transform: rotate(3deg);}
+    100%  {transform: rotate(-3deg);}
+}
+
 /* --------- LILLA RESAN --------- */
 
 /* --------- STORA RESAN --------- */
+
+.large-trip {
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.large-trip__header {
+    margin: 0;
+    color: var(--red);
+    font-size: 3rem;
+}
+
+.large-trip__blurb {
+    margin: 0;
+    color: var(--red);
+}
+
+.large-trip__price {
+    animation-name: pricetag;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    background-color: orange;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 2.5rem;
+    max-width: 150px;
+    padding: 0.5rem;
+    transform: rotate(-3deg);
+    text-align: center;
+    text-decoration: none;
+    justify-self: end;
+    margin-top: 0.5rem;
+}
+
+.large-trip details {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: var(--font-headline);
+}
+
+.large-trip summary {
+    font-size: 2rem;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.large-trip details p {
+    font-family: var(--font-text);
+}
+
+.large-trip__pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 1rem;
+}
+
+.large-trip__pics img {
+    justify-self: center;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.large-trip__info {
+    background: var(--lightblue);
+    padding: 1rem;
+    margin: 1rem 0;
+    color: var(--white);
+    border-radius: 1rem;
+}
+
+.large-trip__info h2 {
+    margin: 0;
+}
 
 /* --------- OM OSS --------- */
